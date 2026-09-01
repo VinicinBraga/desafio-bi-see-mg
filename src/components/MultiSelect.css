@@ -1,9 +1,9 @@
 .multi-select { position: relative; min-width: 0; }
 .filter .multi-label { font-size: 10px; font-weight: 700; color: #6c7072; display: block; margin-bottom: 7px; }
-.multi-control { width: 100%; height: 38px; border: 1px solid #d8dada; background: #fafafa; padding: 4px 7px; color: #555; border-radius: 3px; display: flex; align-items: center; gap: 4px; cursor: text; transition: border-color .15s, box-shadow .15s; overflow: hidden; }
+.multi-control { width: 100%; height: 38px; border: 1px solid #bfc3c5; background: #fafafa; padding: 4px 7px; color: #4f5355; border-radius: 3px; display: flex; align-items: center; gap: 4px; cursor: text; transition: border-color .15s, box-shadow .15s; overflow: hidden; }
 .multi-control.is-open { border-color: #f58220; box-shadow: 0 0 0 2px rgba(245,130,32,.09); background: #fff; }
-.multi-control input { min-width: 34px; flex: 1; height: 26px; border: 0; outline: 0; background: transparent; color: #484b4d; font: 400 10px Inter, sans-serif; }
-.multi-control input::placeholder { color: #929596; }
+.multi-control input { min-width: 34px; flex: 1; height: 26px; border: 0; outline: 0; background: transparent; color: #4f5355; font: 400 10px Inter, sans-serif; }
+.multi-control input::placeholder { color: #6f7477; }
 .filter .multi-chip { max-width: 92px; height: 24px; flex: 0 1 auto; display: flex; align-items: center; gap: 3px; padding: 0 4px 0 7px; margin: 0; border: 1px solid #ead5c4; border-radius: 2px; background: #fff3e9; color: #655a52; font-size: 9px; font-weight: 600; }
 .filter .multi-chip > span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: block; margin: 0; color: inherit; font-size: inherit; font-weight: inherit; }
 .multi-chip button,.multi-clear { width: 17px; height: 20px; flex: 0 0 auto; padding: 0; border: 0; background: transparent; color: #a66c40; display: grid; place-items: center; cursor: pointer; }
