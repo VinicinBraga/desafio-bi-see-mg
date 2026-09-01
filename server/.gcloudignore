@@ -1,0 +1,10 @@
+.gcloudignore
+node_modules/
+.env
+.env.*
+*.log
+*.pem
+*.key
+*credentials*.json
+*service-account*.json
+

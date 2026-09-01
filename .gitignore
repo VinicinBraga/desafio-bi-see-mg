@@ -1,0 +1,18 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+*.pem
+*.key
+*credentials*.json
+*service-account*.json
+.DS_Store
+
+*.tsbuildinfo
+
+# Dados locais do case
+Desafio_BI_Final_V4.xlsx
+cadastro_escolas_tratado.csv
+pagamentos_tratado.csv

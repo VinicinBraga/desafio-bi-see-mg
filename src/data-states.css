@@ -1,0 +1,42 @@
+.clear:disabled { opacity: .45; cursor: not-allowed; }
+.filter-panel { position: relative; }
+.period-picker { position: relative; }
+.period-picker .period { cursor: pointer; }
+.period-picker .period:hover,.period-picker .period[aria-expanded="true"] { border-color: #f58220; }
+.period-popover { position: absolute; z-index: 30; top: calc(100% + 6px); right: 0; width: 214px; padding: 13px; pointer-events: auto; background: #fff; border: 1px solid #d8dada; border-top: 2px solid #f58220; box-shadow: 0 8px 20px rgba(36,40,42,.14); }
+.period-popover-title { display: block; margin-bottom: 10px; color: #6c7072; font-size: 8px; font-weight: 700; letter-spacing: .6px; text-transform: uppercase; }
+.period-popover-controls { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.month-control { position: relative; min-width: 0; }
+.month-control > span { display: block; margin-bottom: 5px; color: #85898b; font-size: 8px; font-weight: 600; }
+.month-trigger { width: 100%; height: 34px; padding: 0 8px; border: 1px solid #d8dada; border-radius: 2px; outline: 0; background: #fafafa; color: #4f5355; display: flex; align-items: center; justify-content: space-between; font-size: 10px; cursor: pointer; }
+.month-trigger:hover,.month-trigger:focus,.month-trigger[aria-expanded="true"] { border-color: #f58220; background: #fff; }
+.month-trigger svg { width: 12px; height: 12px; color: #929596; transform: rotate(90deg); }
+.month-trigger[aria-expanded="true"] svg { transform: rotate(-90deg); }
+.month-options { position: absolute; z-index: 35; top: calc(100% + 4px); left: 0; width: 100%; padding: 3px 0; border: 1px solid #d8dada; border-top: 2px solid #f58220; background: #fff; box-shadow: 0 6px 15px rgba(36,40,42,.13); }
+.month-options button { width: 100%; height: 27px; padding: 0 8px; border: 0; background: #fff; color: #55595b; display: flex; align-items: center; font-size: 9px; cursor: pointer; }
+.month-options button:hover,.month-options button.is-active { background: #f5f6f6; }
+.month-options button[aria-selected="true"] { color: #e8751b; font-weight: 700; }
+.month-options button:disabled { color: #c7c9ca; background: #fafafa; cursor: not-allowed; }
+.insights .insight { padding: 15px 18px; }
+.insights .insight p { line-height: 1.55; }
+.update-feedback { position: absolute; right: 18px; bottom: -16px; height: 14px; display: flex; align-items: center; gap: 5px; color: #777b7d; font-size: 8px; font-weight: 600; }
+.update-feedback > svg { width: 11px; height: 11px; color: #f58220; animation: spin 1s linear infinite; }
+.update-feedback.update-error { color: #9b5d52; }
+.update-feedback.update-error > svg { animation: none; color: #b86757; }
+.update-feedback button { padding: 0; border: 0; border-bottom: 1px solid currentColor; background: transparent; color: #55595b; font-size: 8px; cursor: pointer; }
+.data-state { min-height: 250px; background: #fff; border: 1px solid #e1e3e3; display: flex; align-items: center; justify-content: center; gap: 14px; color: #626668; }
+.data-state > svg { color: #f58220; animation: spin 1s linear infinite; }
+.data-state div { display: flex; flex-direction: column; gap: 5px; }
+.data-state b { font: 600 13px Montserrat; }
+.data-state span { font-size: 10px; color: #8b8e90; }
+.data-state.error > svg { animation: none; }
+.data-state button { border: 0; background: #303336; color: #fff; padding: 10px 13px; font-size: 10px; cursor: pointer; }
+.empty-table { text-align: center; padding: 28px; color: #8c8f90; font-size: 10px; }
+.table-card .table-wrap { min-height: 294px; }
+.table-pagination { display: flex; align-items: center; gap: 4px; }
+.card header .table-pagination > span { margin: 0 8px 0 0; color: #7f8385; font-size: 9px; font-weight: 500; }
+.card header .table-pagination button { width: 27px; height: 27px; border: 1px solid #e2e3e3; background: #f7f8f8; color: #626668; display: grid; place-items: center; cursor: pointer; }
+.card header .table-pagination button:hover:not(:disabled) { border-color: #f58220; color: #e8751b; background: #fff; }
+.card header .table-pagination button:disabled { opacity: .35; cursor: not-allowed; }
+.card header .table-pagination svg { width: 14px; }
+@keyframes spin { to { transform: rotate(360deg); } }

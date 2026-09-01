@@ -1,0 +1,15 @@
+{
+  "name": "painel-financeiro-see-mg-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "@google-cloud/bigquery": "^7.9.4",
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}
