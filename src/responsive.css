@@ -23,6 +23,8 @@
   footer{padding-left:22px;padding-right:22px}
 }
 
+.header-signature strong{color:#f58220}
+
 @media(max-width:768px){
   .topbar h1{font-size:18px}
   main{padding:20px}

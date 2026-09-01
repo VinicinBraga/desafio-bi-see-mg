@@ -291,5 +291,16 @@ function Quality() {
 
 export default function App() {
   const [page,setPage] = useState<'executive'|'quality'>('executive')
-  return <div className="app-shell"><aside><div className="brand"><div className="mg-mark">MG</div><div><b>SEE · MG</b><span>Educação</span></div></div><nav><small>PAINEL</small><button className={page==='executive'?'selected':''} onClick={()=>setPage('executive')}><LayoutDashboard/>Visão Executiva</button><button className={page==='quality'?'selected':''} onClick={()=>setPage('quality')}><Database/>Qualidade & Modelagem</button></nav><div className="side-footer"><GraduationCap/><span>Rede Estadual<br/><b>Minas Gerais</b></span></div></aside><div className="main"><header className="topbar"><div><h1>Painel Financeiro da Rede Estadual</h1><p>Secretaria de Estado de Educação de Minas Gerais</p></div></header><main>{page==='executive'?<Executive/>:<Quality/>}</main><footer>Secretaria de Estado de Educação de Minas Gerais <span>•</span> Painel para fins de análise</footer></div></div>
+  return <div className="app-shell"><aside><div className="brand"><div className="mg-mark">MG</div><div><b>SEE · MG</b><span>Educação</span></div></div><nav><small>PAINEL</small><button className={page==='executive'?'selected':''} onClick={()=>setPage('executive')}><LayoutDashboard/>Visão Executiva</button><button className={page==='quality'?'selected':''} onClick={()=>setPage('quality')}><Database/>Qualidade & Modelagem</button></nav><div className="side-footer"><GraduationCap/><span>Rede Estadual<br/><b>Minas Gerais</b></span></div></aside><div className="main"><header className="topbar">
+  <div>
+    <h1>Painel Financeiro da Rede Estadual</h1>
+    <p>Secretaria de Estado de Educação de Minas Gerais</p>
+  </div>
+
+  <div className="header-signature">
+    <span>REDE ESTADUAL</span>
+    <div className="header-signature-line" />
+    <strong>2026</strong>
+  </div>
+</header><main>{page==='executive'?<Executive/>:<Quality/>}</main><footer>Secretaria de Estado de Educação de Minas Gerais <span>•</span> Painel para fins de análise</footer></div></div>
 }
