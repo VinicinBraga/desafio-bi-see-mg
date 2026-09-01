@@ -1,0 +1,89 @@
+@media(max-width:1024px){
+  body{min-width:0;overflow-x:hidden}
+  .app-shell{display:block}
+  aside{position:sticky;top:0;width:100%;height:64px;flex-direction:row;align-items:stretch;z-index:50}
+  .brand{width:205px;height:64px;padding:12px 18px;border-bottom:0;border-right:1px solid #494c4e;flex:0 0 auto}
+  nav{padding:8px 12px;display:flex;align-items:center;gap:5px;min-width:0}
+  nav small{display:none}
+  nav button{width:auto;min-width:0;height:44px;margin:0;padding:0 14px;white-space:nowrap}
+  nav button.selected:before{left:0;right:0;top:auto;bottom:-8px;width:auto;height:3px}
+  .side-footer{display:none}
+  .main{margin-left:0;width:100%;min-width:0}
+  .topbar{height:76px;padding:0 22px;border-left:0}
+  main{padding:22px;min-width:0}
+  .filter-panel{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+  .clear{grid-column:auto;justify-content:center}
+  .kpi-grid,.quality-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .dashboard-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .wide{grid-column:span 2}
+  .insights{grid-column:span 2}
+  .quality-grid{grid-template-columns:1fr}
+  .table-wrap{max-width:100%;overflow-x:auto;overscroll-behavior-inline:contain}
+  .table-wrap table{min-width:820px}
+  footer{padding-left:22px;padding-right:22px}
+}
+
+@media(max-width:768px){
+  .topbar h1{font-size:18px}
+  main{padding:20px}
+  .page-heading{align-items:center;gap:16px}
+  .page-heading>div:first-child{min-width:0}
+  .page-heading h2{font-size:22px}
+  .period-picker{flex:0 0 auto}
+  .dashboard-grid{grid-template-columns:minmax(0,1fr)}
+  .wide,.insights{grid-column:span 1}
+  .chart{height:235px;padding-left:5px;padding-right:5px}
+  .bar-chart{height:220px}
+  .quality-grid{min-width:0}
+  .flow{flex-direction:column;align-items:stretch;padding:24px 20px}
+  .flow-box{width:100%;flex:none}
+  .flow-arrow{width:auto;height:45px;justify-content:center}
+  .flow-arrow svg{transform:rotate(90deg)}
+  .lineage{flex-wrap:wrap;gap:14px 7px;padding:17px}
+  .lineage>i{width:32px;margin:0 5px}
+}
+
+@media(max-width:600px){
+  aside{height:auto;position:sticky;display:block}
+  .brand{width:100%;height:56px;padding:9px 16px;border-right:0;border-bottom:1px solid #494c4e}
+  .mg-mark{font-size:21px}
+  nav{height:54px;padding:5px 8px;display:grid;grid-template-columns:1fr 1fr}
+  nav button{width:100%;height:43px;padding:0 10px;justify-content:center;font-size:11px}
+  nav button.selected:before{bottom:-5px}
+  .topbar{height:72px;padding:0 16px}
+  .topbar h1{font-size:16px;margin-bottom:5px}
+  .topbar p{font-size:10px}
+  main{padding:17px 16px 26px}
+  .page-heading{align-items:flex-start;flex-wrap:wrap;margin-bottom:18px}
+  .page-heading h2{font-size:20px}
+  .page-heading p{font-size:10px;line-height:1.45}
+  .period-picker{margin-left:auto}
+  .period-popover{max-width:calc(100vw - 32px)}
+  .filter-panel{grid-template-columns:minmax(0,1fr);padding:14px;gap:12px}
+  .clear{width:100%}
+  .update-feedback{right:14px}
+  .multi-dropdown{width:100%;max-width:calc(100vw - 60px)}
+  .kpi-grid,.quality-metrics{grid-template-columns:minmax(0,1fr);gap:10px}
+  .kpi{min-height:88px;padding-top:13px;padding-bottom:13px}
+  .kpi:before{height:44px}
+  .kpi strong{font-size:19px}
+  .card>header{padding-left:14px;padding-right:14px}
+  .insight{padding-left:14px;padding-right:14px}
+  .chart{height:225px}
+  .legend-row{padding-left:14px;padding-right:14px}
+  .rank-list{padding-left:14px;padding-right:14px}
+  .table-card>header{height:auto;min-height:68px;gap:10px}
+  .table-card>header>div:first-child{min-width:0}
+  .table-pagination{flex:0 0 auto}
+  .card header .table-pagination>span{margin-right:3px;white-space:nowrap}
+  .quality-seal{margin-left:auto}
+  .quality-metrics article{padding:14px}
+  .flow{padding:20px 14px}
+  .rule-note{margin:0 14px 18px}
+  .treatment{padding:20px 14px}
+  .method-note{padding:20px 17px;gap:12px}
+  .method-note>div:first-child{width:38px;height:38px}
+  .lineage{display:grid;grid-template-columns:1fr 1fr;justify-items:start}
+  .lineage>i{display:none}
+  footer{padding:0 16px 20px;line-height:1.5}
+}
